@@ -54,11 +54,13 @@ opciones.forEach((opcion, id) => {
             modal_texto.innerHTML = `Elegiste ${eleccionJugador} y la computadora escogió ${eleccionBot}. ¡No esperes más, vuelve a intentarlo antes de que la IA domine al mundo!`
         }
 
-        if (modal.classList.contains("modal--close")) {
-            modal.classList.remove("modal--display");
-            setTimeout(() => {
-                modal.classList.remove("modal--close");
-            }, 10);
+        modal_imagen.onload = () => {
+            if (modal.classList.contains("modal--close")) {
+                modal.classList.remove("modal--display");
+                setTimeout(() => {
+                    modal.classList.remove("modal--close");
+                }, 10);
+            }
         }
     });
 });
