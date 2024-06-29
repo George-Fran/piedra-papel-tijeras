@@ -1,7 +1,7 @@
 # Piedra, Papel o Tijeras
 
 <p align="center">
-  <img src="ruta/a/tu/imagen.png" alt="Piedra, Papel o Tijeras">
+  <img src="https://piedra-papel-tijeras-play.netlify.app/img/ppt.png" alt="Piedra, Papel o Tijeras">
 </p>
 
 ## Descripción
