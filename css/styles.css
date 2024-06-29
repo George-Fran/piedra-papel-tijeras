@@ -1,0 +1,147 @@
+:root {
+    --blanco: #fff;
+    --negro: #191c29;
+    --principal: #fcda21;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background: var(--negro);
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.titulo {
+    margin-top: 10rem;
+}
+
+.parrafo {
+    margin-top: 1rem;
+    margin-bottom: 20rem;
+}
+
+.titulo,
+.parrafo {
+    text-align: center;
+    color: var(--blanco);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+}
+
+.opcion {
+    background: #191c2b;
+    border-radius: 4rem;
+    border: 1px solid #373A40;
+    text-align: center;
+    padding: 2rem;
+    color: var(--blanco);
+    cursor: pointer;
+}
+.opcion:hover{
+    box-shadow: 0 0 10px 2px #2c2c2c;
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
+    filter: opacity(.5);
+}
+
+.opcion__nombre {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        margin-top: 5rem;
+    }
+    .parrafo {
+        margin-bottom: 5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #141414a8;
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.modal--close{
+    opacity: 0;
+    transform: translateY(-10rem);
+}
+.modal--display{
+    display: none;
+}
+.modal__container {
+    width: min(90%, 60rem);
+    max-height: 90%;
+    margin: auto;
+    background-color: var(--blanco);
+    text-align: center;
+    border-radius: .6rem;
+    padding: 2.5rem 2rem;
+}
+
+.modal__imagen {
+    width: min(90%, 30rem);
+}
+.modal__resultado{
+    margin-bottom: .5rem;
+}
+.boton {
+    margin-top: 2rem;
+    border: none;
+    padding: 1.5rem 2rem;
+    background-color: var(--principal);
+    cursor: pointer;
+    border-radius: .6rem;
+    font-weight: 700;
+    border: 1px solid var(--principal);
+}
+.boton:hover{
+    transition: background-color, .5s ease;
+    background-color: var(--blanco);
+}
+.footer {
+    margin-top: 15rem;
+    text-align: center;
+}
+.footer__texto{
+    color: var(--blanco);
+}
+.footer__texto a{
+    text-decoration: none;
+    color: var(--principal);
+}
+.footer__texto a:hover{
+    text-shadow: 2px 2px 10px #b32020;
+}

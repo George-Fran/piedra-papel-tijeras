@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <h1 class="titulo">Piedra, papel o tijeras</h1>
+        <p class="parrafo">Porfavor eligé una opción</p>
+        <div class="grid">
+            <div class="opcion">
+                <img src="img/stone.svg" alt="" class="opcion__imagen">
+                <h3 class="opcion__nombre">Piedra</h3>
+            </div>
+            <div class="opcion">
+                <img src="img/paper.svg" alt="" class="opcion__imagen">
+                <h3 class="opcion__nombre">Papel</h3>
+            </div>
+            <div class="opcion">
+                <img src="img/scissors.svg" alt="" class="opcion__imagen">
+                <h3 class="opcion__nombre">Tijera</h3>
+            </div>
+        </div>
+    </main>
+    <section class="modal modal--close modal--display">
+        <div class="modal__container">
+            <div><img alt="loading" class="modal__imagen"></div>
+            <h1 class="modal__resultado">Felicidades, le ganaste a la computadora</h1>
+            <p class="modal__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button id="boton" class="boton">Volver a jugar</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Code by <a href="https://www.instagram.com/geogz.dev/" target="_blank">Geogz</a></p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
